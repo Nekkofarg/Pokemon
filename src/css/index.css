@@ -1,0 +1,27 @@
+.background {
+    width: 800px;
+    height: 200px;
+    background: grey;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon1 {
+    width: 350px;
+    height: 150px;
+    background: red;
+}
+
+.win {
+    width: 50px;
+    height: 40px;
+    background: black;
+    color: white;
+}
+.pokemon2 {
+    width: 350px;
+    height: 150px;
+    background: blue;
+}
