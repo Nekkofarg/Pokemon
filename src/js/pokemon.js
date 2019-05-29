@@ -1,14 +1,22 @@
-let pokemon = class {
-    constructor (N = 'random', t = 'normal', l = 1){
+const Pokemon = class {
+    constructor (N = 'random', t = 'normal', l = 20, a = 1){
         this.name = N;
         this.type = t;
-        this.lvl = l;
+        this.life = l;
+        this.atack = a; 
     }
+    hit(){
+       return Pokemon.ceil(Pokemon.random()*this.atack);
+    }
+    restliffe(){
+        return Pokemon.life - Pokemon.hit();
+    }
+
 }
 
-let Bulbasur = new pokemon ('Bulbasur', 'planta', 10);
-let Pikachu = new pokemon ('Pikachu', 'electrico', 9);
-let Charizar = new pokemon ('Charizar', 'fuego', 15);
-let Squirtel = new pokemon ('Squirtel', 'agua', 8);
+const Bulbasur = new Pokemon ('Bulbasur', 'planta', 20, 2);
+const Pikachu = new Pokemon ('Pikachu', 'electrico', 20, 3);
+const Charizar = new Pokemon ('Charizar', 'fuego', 20, 3);
+const Squirtel = new Pokemon ('Squirtel', 'agua', 20, 2);
 
 export const pokearray = [Bulbasur, Pikachu, Charizar, Squirtel];
